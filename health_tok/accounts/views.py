@@ -36,3 +36,6 @@ def login(request):
 def logout(request):
     auth.logout(request)
     return redirect('home')
+
+def social_login(request):
+    return render(request, 'social_login.html')

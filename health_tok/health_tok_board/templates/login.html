@@ -16,4 +16,10 @@
             <input type="submit" class="btn btn-primary" value="로그인">
         </form>
     </div>
+    <div class="container">
+        <form method="POST" action="{% url 'social_login' %}">
+            {% csrf_token %}
+            <input type="submit" class="btn btn-primary" value="소셜 로그인">
+        </form>
+    </div>
 {% endblock %}
