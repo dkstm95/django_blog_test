@@ -1,0 +1,8 @@
+<h1>Thumbnail</h1>
+
+{% for blog in blogs.all %}
+    <img src="{{ blog.image.url }}" width="400">
+    <br>
+    <p>썸네일</p>
+    <img src="{{ blog.image_thumbnail.url}}" alt="">
+{% endfor %}
